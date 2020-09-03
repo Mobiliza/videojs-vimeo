@@ -62,8 +62,11 @@ class Vimeo extends Tech {
       url: this.options_.source.src,
       byline: false,
       portrait: false,
-      title: false
+      title: false,
+      controls: false
     };
+
+    vimeoOptions.playsinline = this.options_.playsinline;
 
     if (this.options_.autoplay) {
       vimeoOptions.autoplay = true;
